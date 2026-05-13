@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/SalsArcadeNew/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <script type="module" crossorigin src="/SalsArcadeNew/assets/main-D7To46Ao.js"></script>
+    <link rel="stylesheet" crossorigin href="/SalsArcadeNew/assets/main-BP87yJHw.css">
+  </head>
+  <body class="min-h-screen bg-[url('https://storage.needpix.com/rsynced_images/synthwave-3941721_1280.jpg')] bg-cover bg-center">
+      <header>
+        <nav>
+          <div class="navbar bg-black/80 shadow-sm border-2 border-fuchsia-400 flex flex-wrap gap-2">
+            <a class="btn btn-ghost text-xl text-orange-400">Sal's Arcade</a>
+            <a href="./index.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Home</a>
+            <a href="./physical.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Physical</a>
+            <a href="./digital.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Digital</a>
+            <a href="./events.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Events</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="min-h-screen bg-black/80 py-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-start justify-items-center">
+            <div class="overflow-x-auto">
+            <table class="table table-zebra outline-2 outline-fuchsia-400">
+                <!-- head -->
+                <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-orange-400">Events</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- row 1 -->
+                <tr>
+                    <th>5/20</th>
+                    <td>DnD night</td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                    <th>6/5</th>
+                    <td>MtG tournament</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                    <th>8/1</th>
+                    <td>Leaderboard Brawl</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <form action="/submit" method="POST" onsubmit="return validateForm()" class="fieldset bg-black/60 border-2 border-fuchsia-400 rounded-box w-xs p-4">
+                <fieldset class="fieldset">
+                    <label class="label text-white">Email</label>
+                    <input id="email" type="email" class="input" placeholder="Email" required />
+                </fieldset>
+                <label class="fieldset">
+                    <span class="label text-white">Phone Number</span>
+                    <input id="phoneNum" type="tel" class="input" placeholder="111-111-1111" required />
+                </label>
+                <button class="btn btn-outline text-fuchsia-400 mt-4" type="submit">Submit</button>
+                <button class="btn btn-ghost mt-1 text-orange-400" type="reset">Reset</button>
+            </form>
+        </div>
+      </main>
+    <footer class="footer sm:footer-horizontal bg-orange-400/80 items-center p-4">
+        <aside class="grid-flow-col items-center">
+          <img src="/SalsArcadeNew/joystick.svg" width="36" height="36">
+          <p class="text-black">Copyright © <span id="year"></span> - All right reserved</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <img src="/SalsArcadeNew/github.svg" width="36" height="36">
+            <img src="/SalsArcadeNew/linkedin.svg" width="36" height="36">
+        </nav>
+      </footer>
+  </body>
+</html>
