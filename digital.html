@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js"></script>
+    <title>Digital</title>
+  </head>
+  <body class="min-h-screen bg-[url('https://storage.needpix.com/rsynced_images/synthwave-3941721_1280.jpg')] bg-cover bg-center">
+    <header>
+        <nav>
+          <div class="navbar bg-black/80 shadow-sm border-2 border-fuchsia-400 flex flex-wrap gap-2">
+            <a class="btn btn-ghost text-xl text-orange-400">Sal's Arcade</a>
+            <a href="/index.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Home</a>
+            <a href="/physical.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Physical</a>
+            <a href="/digital.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Digital</a>
+            <a href="/events.html" class="btn text-fuchsia-400 btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Events</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="min-h-screen bg-black/80 py-10 px-4 grid grid-cols-1 md:grid-cols-3 gap-3 justify-items-center">
+            <div class="card bg-black/60 w-96 h-105 shadow-sm outline-2 outline-fuchsia-400">
+                <figure>
+                    <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Dig_Dug_Flyer.png/250px-Dig_Dug_Flyer.png"
+                    class="w-full h-full object-cover"
+                    alt="Dig dug cover art" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-orange-400">Dig Dug</h2>
+                    <p>The classic Dig Dug. Try to survive and get a high score!</p>
+                    <div class="card-actions justify-end">
+                    <button class="btn btn-outline text-fuchsia-400">Play Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-black/60 w-96 h-105 shadow-sm outline-2 outline-fuchsia-400">
+                <figure>
+                    <img
+                    src="https://www.nist.gov/sites/default/files/images/2019/07/25/16for007_asteroidsbox_cabrinetycollection_stanfordlibrary.png"
+                    class="w-full h-full object-cover"
+                    alt="Asteroids cover art" width="300px" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-orange-400">Asteroids</h2>
+                    <p>Shoot and blast those space rocks and earn your place on the top of the leaderboard!</p>
+                    <div class="card-actions justify-end">
+                    <button class="btn btn-outline text-fuchsia-400">Play Now</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card bg-black/60 w-96 h-105 shadow-sm outline-2 outline-fuchsia-400">
+                <figure>
+                    <img
+                    src="https://cdn.mobygames.com/covers/17977648-galaga-antstream-front-cover.png"
+                    class="w-full h-full object-cover"
+                    alt="Galaga cover art" width="300px" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title text-orange-400">Galaga</h2>
+                    <p>Destroy the enemy ships and prove yourself worthy of #1 on the leaderboard!</p>
+                    <div class="card-actions justify-end">
+                    <button class="btn btn-outline text-fuchsia-400">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer class="footer sm:footer-horizontal bg-orange-400/80 items-center p-4">
+        <aside class="grid-flow-col items-center">
+          <img src="/joystick.svg" width="36" height="36">
+          <p class="text-black">Copyright © <span id="year"></span> - All right reserved</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <img src="/github.svg" width="36" height="36">
+            <img src="/linkedin.svg" width="36" height="36">
+        </nav>
+      </footer>
+  </body>
+</html>
